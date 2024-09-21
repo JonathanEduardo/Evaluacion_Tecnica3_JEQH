@@ -1,4 +1,4 @@
-const Reserva = require('../models/Reserva');
+const { Reserva } = require('../models');
 const Evento = require('../models/Evento'); // Asegúrate de incluir esto
 
 // Controladores de Reservas

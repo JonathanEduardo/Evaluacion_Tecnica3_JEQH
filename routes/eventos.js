@@ -70,6 +70,4 @@ router.put('/:id', eventosController.actualizarEvento);
  */
 router.delete('/:id', eventosController.eliminarEvento);
 
-
-
 module.exports = router ;

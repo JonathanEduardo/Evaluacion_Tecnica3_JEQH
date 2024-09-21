@@ -1,5 +1,6 @@
-const Evento = require('../models/Evento');
 
+const { Evento } = require('../models');
+const logger = require('../logger');  // Importa el logger
 // Controladores de Eventos
 
 /**
@@ -15,6 +16,7 @@ exports.listarEventos = async (req, res) => {
     const eventos = await Evento.findAll();
     res.json(eventos);
   } catch (error) {
+    logger.error('Error al listar eventos', error);  // Registrar el error
     res.status(500).json({ error: 'Error al listar eventos' });
   }
 };
@@ -100,5 +102,3 @@ exports.eliminarEvento = async (req, res) => {
     res.status(500).json({ error: 'Error al eliminar el evento' });
   }
 };
-
-

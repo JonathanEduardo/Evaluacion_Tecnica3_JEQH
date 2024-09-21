@@ -19,21 +19,32 @@ Si no tienes instalado MySQL, puedes optar por instalar XAMPP, que proporciona u
 ```bash
 git clone https://github.com/JonathanEduardo/Evaluacion_Tecnica3_JEQH.git
 ```
+-**Entrar a carpeta clonada**
+-**Enter cloned folder**
+```bash
+cd /reserva_eventos_api
+```
 
+-**Instalar dependencias**
+-**Install dependences**
+```bash
+npm install
+```
 
 #### Configuración de MySQL
 -**Usar MySQL instalado de manera independiente**
 -*Instala MySQL desde el sitio oficial MySQL.*
--*Inicia el servicio de MySQL y crea una base de datos llamada reservas_eventos_db:*
+-*Inicia el servicio de MySQL y crea una base de datos llamada reservas_db:*
 
 ```bash 
-CREATE DATABASE reservas_eventos_db;
+CREATE DATABASE reservas_db;
 ```
--*Crea y Configura el archivo .env con la conexión a MySQL de XAMPP (por defecto):*
+-*Cambia el nombre de .example.env a .env y completa los campos:  DB_USER, DB_PASSWORD y DB_NAME: reservas_db*
+-*Change the document name from .example.env to .env and complete the: DB_USER, DB_PASSWORD y DB_NAME: reservas_db*
 ```bash 
 DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD=
+DB_PASSWORD=12345678
 DB_NAME=reservas_db
 ```
 

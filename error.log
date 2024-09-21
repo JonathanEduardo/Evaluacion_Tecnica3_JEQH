@@ -1,0 +1,22 @@
+2024-09-21T22:32:36.936Z [error]: TypeError: Evento.findAll is not a function
+    at exports.listarEventos (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\controllers\eventosController.js:15:34)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\index.js:47:12)
+2024-09-21T22:33:50.910Z [error]: TypeError: Evento.findAll is not a function
+    at exports.listarEventos (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\controllers\eventosController.js:15:34)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\user\Desktop\evaluacion2\reserva_eventos_api\node_modules\express\lib\router\index.js:47:12)
