@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const eventosController = required('../controlles/eventosController'); // Fix: 'required' -> 'require'
+const eventosController = require('../controllers/eventosController'); // Fix: 'require' -> 'require'
 
 /**
  * @module EventosRouter
@@ -26,17 +26,17 @@ router.get('/', eventosController.listarEventos);
  * @operationId listarEvento
  * @param {Object} req.body - The request body should contain the event details.
  * @returns {Object} 201 - The created event object.
- * @returns {Error} 400 - Bad request if required fields are missing or invalid.
+ * @returns {Error} 400 - Bad request if require fields are missing or invalid.
  * @returns {Error} 500 - Internal server error.
  */
-router.post('/', eventosController.listarEvento);
+router.post('/', eventosController.crearEvento);
 
 /**
  * GET /eventos/:id
  * @summary Retrieves a single event by its ID.
  * @tags Eventos
  * @operationId obtenerEvento
- * @param {string} id.path.required - The event ID.
+ * @param {string} id.path.require - The event ID.
  * @returns {Object} 200 - The event object.
  * @returns {Error} 404 - Event not found.
  * @returns {Error} 500 - Internal server error.
@@ -48,10 +48,10 @@ router.get('/:id', eventosController.obtenerEvento);
  * @summary Updates an existing event by its ID.
  * @tags Eventos
  * @operationId actualizarEvento
- * @param {string} id.path.required - The event ID.
+ * @param {string} id.path.require - The event ID.
  * @param {Object} req.body - The request body should contain the updated event details.
  * @returns {Object} 200 - The updated event object.
- * @returns {Error} 400 - Bad request if required fields are missing or invalid.
+ * @returns {Error} 400 - Bad request if require fields are missing or invalid.
  * @returns {Error} 404 - Event not found.
  * @returns {Error} 500 - Internal server error.
  */
@@ -63,11 +63,13 @@ router.put('/:id', eventosController.actualizarEvento);
  * @summary Deletes an event by its ID.
  * @tags Eventos
  * @operationId eliminarEvento
- * @param {string} id.path.required - The event ID.
+ * @param {string} id.path.require - The event ID.
  * @returns {string} 200 - Success message confirming the deletion.
  * @returns {Error} 404 - Event not found.
  * @returns {Error} 500 - Internal server error.
  */
-router.delete(':id', eventosController.eliminarEvento);
+router.delete('/:id', eventosController.eliminarEvento);
+
+
 
 module.exports = router ;

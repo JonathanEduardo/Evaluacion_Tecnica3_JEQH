@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const db = require('./config/database');  // Tu configuración de la base de datos
 const eventoRoutes = require('./routes/eventos');  // Las rutas de eventos
 const reservaRoutes = require('./routes/reservas');  // Las rutas de reservas
+const dotenv = require('dotenv').config();
 
 const app = express();
 

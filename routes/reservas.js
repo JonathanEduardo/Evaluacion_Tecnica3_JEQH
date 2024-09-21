@@ -25,7 +25,7 @@ router.get('/', reservasController.listarReservas);
  * @operationId crearReserva
  * @param {Object} req.body - The request body should contain the reservation details.
  * @returns {Object} 201 - The created reservation object.
- * @returns {Error} 400 - Bad request if required fields are missing or invalid.
+ * @returns {Error} 400 - Bad request if require fields are missing or invalid.
  * @returns {Error} 500 - Internal server error.
  */
 router.post('/', reservasController.crearReserva);
@@ -35,7 +35,7 @@ router.post('/', reservasController.crearReserva);
  * @summary Retrieves a single reservation by its ID.
  * @tags Reservas
  * @operationId obtenerReserva
- * @param {string} id.path.required - The reservation ID.
+ * @param {string} id.path.require - The reservation ID.
  * @returns {Object} 200 - The reservation object.
  * @returns {Error} 404 - Reservation not found.
  * @returns {Error} 500 - Internal server error.
@@ -47,10 +47,10 @@ router.get('/:id', reservasController.obtenerReserva);
  * @summary Updates an existing reservation by its ID.
  * @tags Reservas
  * @operationId actualizarReserva
- * @param {string} id.path.required - The reservation ID.
+ * @param {string} id.path.require - The reservation ID.
  * @param {Object} req.body - The request body should contain the updated reservation details.
  * @returns {Object} 200 - The updated reservation object.
- * @returns {Error} 400 - Bad request if required fields are missing or invalid.
+ * @returns {Error} 400 - Bad request if require fields are missing or invalid.
  * @returns {Error} 404 - Reservation not found.
  * @returns {Error} 500 - Internal server error.
  */
@@ -61,7 +61,7 @@ router.put('/:id', reservasController.actualizarReserva);
  * @summary Deletes a reservation by its ID.
  * @tags Reservas
  * @operationId eliminarReserva
- * @param {string} id.path.required - The reservation ID.
+ * @param {string} id.path.require - The reservation ID.
  * @returns {string} 200 - Success message confirming the deletion.
  * @returns {Error} 404 - Reservation not found.
  * @returns {Error} 500 - Internal server error.
